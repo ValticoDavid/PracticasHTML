@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad Transform</title>
+
+
+    <style>
+        #a {
+            width: 150px;
+            height: 80px;
+            background-color: yellowgreen;
+            transform: rotate(25deg);
+            /*IE 9*/
+            -ms-transform: rotate(25deg);
+            /*Opera y Safari*/
+            -webkit-transform: rotate(25deg);
+            /*Mozilla*/
+            -moz-transform: rotate(25deg);
+            /* Y , X*/
+            transform-origin: 10% 300%;
+        }
+        
+        #b {
+            width: 150px;
+            height: 80px;
+            background-color: yellowgreen;
+            transform: skewY(20deg);
+            /*IE 9*/
+            -ms-transform: skewY(20deg);
+            /*Opera y Safari*/
+            -webkit-transform: skewY(20deg);
+            /*Mozilla*/
+            -moz-transform: skewY(20deg);
+        }
+        
+        #c {
+            width: 150px;
+            height: 80px;
+            background-color: yellowgreen;
+            transform: scaleY(1.5);
+            /*IE 9*/
+            -ms-transform: scaleY(1.5);
+            /*Opera y Safari*/
+            -webkit-transform: scaleY(1.5);
+            /*Mozilla*/
+            -moz-transform: scaleY(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <H1>Vamos a conocer la propiedad transform en css</H1>
+
+    <h2>transform:rotate(20deg):</h2>
+    <div id="a">Hola mundo !</div>
+
+    <h2>transform:skewY(20deg):</h2>
+    <div id="b">Hola mundo !</div>
+
+    <h2>transform:scaleY(20deg):</h2>
+    <div id="c">Hola mundo !</div>
+</body>
+
+</html>

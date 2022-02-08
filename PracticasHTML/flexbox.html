@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX | CSS</title>
+
+    <style>
+        #flex-cotainer {
+            display: flex;
+            height: 600px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex-flow:row wrap*/
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            background-color: dodgerblue;
+        }
+        
+        #flex-cotainer>div {
+            background-color: black;
+            color: dodgerblue;
+            margin: 10px;
+            padding: 10px;
+            font-size: 35px;
+            line-height: 75px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Conociendo el display flex</h1>
+    <div id="flex-cotainer">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6 </div>
+        <div>7</div>
+        <div>ToD@S</div>
+    </div>
+</body>
+
+</html>

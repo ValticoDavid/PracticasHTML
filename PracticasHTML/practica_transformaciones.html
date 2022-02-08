@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicando css</title>
+
+    <style>
+        body {
+            margin: auto;
+        }
+        
+        #contenedor1 {
+            height: 60px;
+            background-color: mediumpurple;
+        }
+        
+        #asimetrico::before,
+        #asimetrico::after {
+            background: inherit;
+            content: '';
+            height: 50%;
+            left: 0;
+            position: absolute;
+            right: 0;
+            z-index: -1;
+        }
+        
+        #asimetrico::before {
+            top: 0;
+            transform: skewY(2.5deg);
+            transform-origin: 100% 0;
+        }
+        
+        #asimetrico::after {
+            bottom: 0;
+            transform: skewY(-2.5deg);
+            transform-origin: 100%;
+        }
+        
+        #asimetrico {
+            color: #fff;
+            margin: 50px;
+            padding: 40px 0;
+            text-align: center;
+            background-color: yellowgreen;
+            position: relative;
+            /*z-index: 1;*/
+            letter-spacing: 14px;
+            font-size: 2em;
+        }
+        
+        #asimetrico p {
+            font-size: 2em;
+            letter-spacing: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor1"></div>
+
+    <div id="asimetrico">
+        <p>Hola que hace???</p>
+    </div>
+
+    <div id="contenedor1"></div>
+</body>
+
+</html>

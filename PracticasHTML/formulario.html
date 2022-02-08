@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario | HTML</title>
+
+    <style>
+        input:read-only {
+            background-color: lightgrey;
+        }
+        
+        input:invalid {
+            border: 2px solid red;
+        }
+        /*input:valid {
+            border: 2px solid green;
+        }*/
+    </style>
+</head>
+
+<body>
+    <h1>FORMULARIOS</h1>
+    <form action="formulario.html" method="post">
+        <label for="">Nombre</label><br>
+        <input type="text" name="nombres" size="50" required placeholder="Escribe aquí tu nombre" readonly><br>
+
+        <label for="">Apellido Paterno</label><br>
+        <input type="text" name="apPat" size="50"><br>
+
+        <label for="">Correo electronico</label><br>
+        <input type="email" name="correo" size="50"><br>
+
+        <label for="">Telefono</label><br>
+        <input type="tel" name="telefono" size="50"><br>
+
+        <label for="">Fecha de Nacimiento</label><br>
+        <input type="date" name="nacimiento" size="50" min="2010-01-01" max="2030-01-01">
+
+        <p>Password</p>
+        <input type="password" name="passw" maxlength="8" required>
+
+        <p>Sexo:</p>
+        <input type="radio" name="sexo" value="Mujer">Femenino<br>
+        <input type="radio" name="sexo" value="Hombre">Masculino<br>
+        <input type="radio" name="sexo" value="otro">Otro<br>
+
+        <p>Que tipo de peliculas te gustan?</p>
+        <input type="checkbox" name="genero1" value="Terror">Terror<br>
+        <input type="checkbox" name="genero2" value="Suspenso">Suspenso<br>
+        <input type="checkbox" name="genero3" value="Accion">Accion<br>
+        <input type="checkbox" name="genero4" value="Romance">Romance<br>
+        <input type="checkbox" name="genero5" value="Comedia">Comedia<br>
+
+        <p>Municipio</p>
+        <select name="municipio" id="">
+            <option value="Sel">Selecciona</option>
+            <option value="Gdl">Guadalajara</option>
+            <option value="Zap">Zapopan</option>
+            <option value="Tla">Tlaquepaque</option>
+            <option value="Ton">Tonala</option>
+        </select>
+
+        <p>Comentarios</p>
+        <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escribe aquí tus comentarios..."></textarea><br>
+
+        <br>
+        <input type="submit" value="Enviar Formulario">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+
+</html>

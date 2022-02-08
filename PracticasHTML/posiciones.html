@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSICIONES | CSS</title>
+
+    <style>
+        body {
+            margin: auto;
+        }
+        
+        #contenedor {
+            background-color: grey;
+            margin: auto;
+            width: 50%;
+            height: 150px;
+            position: relative;
+        }
+        
+        #uno {
+            background-color: blue;
+        }
+        
+        #dos {
+            background-color: greenyellow;
+            /* position: relative; -- Desplaza los elementos a partir del su punto de origen */
+            position: relative;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 100px;
+        }
+        
+        #tres {
+            background-color: orange;
+            /* position: absolute; -- Desplaza los elementos a partir del contenedor */
+            /* position: fixed; -- Desplaza los elementos a partir de la página y los mantiene (Como efecto flotante y estatico)*/
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+        
+        #tres1 {
+            background-color: orange;
+            /* position: absolute; -- Desplaza los elementos a partir del contenedor */
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        
+        #tres2 {
+            background-color: orange;
+            /* position: absolute; -- Desplaza los elementos a partir del contenedor */
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+        
+        #tres3 {
+            background-color: orange;
+            /* position: absolute; -- Desplaza los elementos a partir del contenedor */
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        #cuatro {
+            background-color: lightseagreen;
+            /* position: sticky; -- Desplaza los elementos a partir del contenedor igual que el fixed pero a partir de su posicion*/
+            position: sticky;
+            top: 0px;
+            padding: 5px;
+        }
+        
+        .referencia {
+            background-color: black;
+            color: orange;
+            padding: 5px;
+            margin: 5px;
+            font-family: initial;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="uno">
+        Titulo Principal
+    </div>
+
+    <div id="dos">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum commodi aperiam odit fugiat sint officiis, temporibus a inventore eveniet voluptatem animi, quam perferendis eius itaque et illum possimus illo quibusdam.
+    </div>
+
+    <div id="contenedor">
+        <div id="tres">
+            Datos del Autor
+        </div>
+
+        <div id="tres1">
+            Datos del Autor
+        </div>
+
+        <div id="tres2">
+            Datos del Autor
+        </div>
+
+        <div id="tres3">
+            Datos del Autor
+        </div>
+    </div>
+
+    <div id="cuatro">
+        Informacion Importante
+    </div>
+
+    <p class="referencia">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p class="referencia">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p class="referencia">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed adipisci neque beatae iste inventore dolorem tempore placeat possimus fugit deserunt exercitationem, dolore similique nobis eos in tenetur veritatis maxime.</p>
+</body>
+
+</html>

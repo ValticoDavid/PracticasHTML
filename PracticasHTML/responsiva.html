@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsive</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        
+        header {
+            padding: 60px;
+            text-align: center;
+            background-color: black;
+            color: blueviolet;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: start;
+            background-color: grey;
+        }
+        
+        nav a {
+            color: black;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        nav a:hover {
+            background-color: black;
+            color: blueviolet;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        aside {
+            flex: 30%;
+            background-color: black;
+            color: blueviolet;
+            padding: 20px;
+        }
+        
+        section {
+            flex: 70%;
+            background-color: blueviolet;
+            color: black;
+            padding: 20px;
+        }
+        
+        footer {
+            display: flex;
+            justify-content: center;
+            background-color: grey;
+            color: black;
+            padding: 20px;
+        }
+        
+        .fakeimg {
+            background-color: gray;
+            color: black;
+            width: 100%;
+            padding: 20px;
+            height: 200px;
+        }
+        
+        @media screen and (max-width: 700px) {
+            .row,
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My website</h1>
+        <p>Esta es una págia responsiva</p>
+    </header>
+
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+
+    <div class="row">
+        <aside>
+            <h2>Acerca de mi</h2>
+            <h5>Mi foto:</h5>
+            <div class="fakeimg">Image</div>
+            <p>Aquí pondre un texto que habla muy bien de mi</p>
+        </aside>
+
+        <section>
+            <article>
+                <h2>Titulo del Encabezado</h2>
+                <h5>Creado el 24 de octubre del 2020</h5>
+                <div class="fakeimg">Image</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos obcaecati odio facilis, vero ratione quas provident iste nesciunt. Voluptas quibusdam fugiat reiciendis consequuntur quasi, veniam iusto tempora deserunt dolorem! Itaque.</p>
+            </article>
+
+            <article>
+                <h2>Titulo del Encabezado</h2>
+                <h5>Creado el 24 de octubre del 2020</h5>
+                <div class="fakeimg">Image</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos obcaecati odio facilis, vero ratione quas provident iste nesciunt. Voluptas quibusdam fugiat reiciendis consequuntur quasi, veniam iusto tempora deserunt dolorem! Itaque.</p>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>Todos lo derechos reservados Unisite - 2020</p>
+    </footer>
+</body>
+
+</html>

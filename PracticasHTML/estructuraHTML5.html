@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura HTML5</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: blueviolet;
+            color: aqua;
+            padding: 10px;
+        }
+        
+        #container {
+            display: flex;
+            padding: 10px;
+        }
+        
+        article {
+            float: left;
+            padding: 0px 20px;
+            background-color: white;
+        }
+        
+        aside {
+            float: left;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+            background-color: gray;
+        }
+        
+        section {
+            float: left;
+            width: 80%;
+            padding: 0px 20px;
+        }
+        
+        nav {
+            background-color: black;
+        }
+        
+        nav a {
+            display: inline-block;
+            padding: 8px;
+            color: aqua;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            background-color: blueviolet;
+            color: black;
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: blueviolet;
+            color: aqua;
+            padding: 10px;
+            text-align: right;
+        }
+        
+        @media only screen and (max-width: 620px) {
+            /*Para telefonos moviles*/
+            body {
+                background-color: blue;
+            }
+            aside,
+            section,
+            footer {
+                clear: both;
+                width: 100%;
+            }
+            #container {
+                display: block;
+            }
+            nav a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1>UNISITE - UNIVERSIDAD DE TECNOLOGIAS DIGITALES</h1>
+
+    </header>
+
+    <!--Menu de Navegacion-->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Carreras</a>
+        <a href="#">Diplomados</a>
+        <a href="#">Nosotros</a>
+    </nav>
+
+    <div id="container">
+        <!--aside es un contenedor para información que se considera solo levemente relacionada al documento 
+            o la sección en la que es definida.-->
+        <aside>
+            <p>Te preparamos para el exito y la ciudad creativa digital</p>
+        </aside>
+
+        <!--Secciona para acomodar contenido-->
+        <section>
+            <article>
+                <h1>Quienes Somos</h1>
+                <p>Somos tu mejor alternativa para prepararte en tu carrera profecional</p>
+            </article>
+
+            <article>
+                <h1>Nuestra Mision</h1>
+                <p>Formar jovenes profecionales para que este preparados a las nuevas exigencias tecnologicas</p>
+            </article>
+        </section>
+    </div>
+
+    <!--Pie de página-->
+    <footer>
+        <p>Av. Federelismo Sur #47 Col. Centro.</p>
+    </footer>
+</body>
+
+</html>
